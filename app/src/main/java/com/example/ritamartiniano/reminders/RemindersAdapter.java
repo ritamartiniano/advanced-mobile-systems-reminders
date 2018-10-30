@@ -34,7 +34,7 @@ public class RemindersAdapter {
     {
         this.mCtx = ctx;
     }
-    public void open()throws SQLExpeption{
+    public void open()throws SQLException{
         mDbHelper = new DatabaseHelper(mCtx);
         mDb = mDbHelper.getWritableDatabase();
     }
